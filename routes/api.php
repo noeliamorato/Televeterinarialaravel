@@ -8,6 +8,7 @@ use App\Http\Controllers\Familia_mascotasController;
 use App\Http\Controllers\Genero_mascotasController;
 use App\Http\Controllers\MascotasController;
 use App\Http\Controllers\MunicipiosController;
+use App\Http\Controllers\PresentacionesController;
 use App\Http\Controllers\Propietario_mascotasController;
 use App\Http\Controllers\RolesController;
 use App\Http\Controllers\Tipo_salida_mascotasController;
@@ -96,6 +97,10 @@ Route::post('/Visitas', [VisitasController::class, 'store']);
 Route::put('/Visitas/{id}', [VisitasController::class, 'update']);
 Route::delete('/Visitas/{id}', [VisitasController::class, 'destroy']);
 
+Route::get('/Presentaciones', [PresentacionesController::class, 'index']);
+Route::post('/Presentaciones', [PresentacionesController::class, 'store']);
+Route::put('/Presentaciones/{id}', [PresentacionesController::class, 'update']);
+Route::delete('/Presentaciones/{id}', [PresentacionesController::class, 'destroy']);
 
 
 
