@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Especializaciones extends Model
+class Roles extends Model
 {
     use HasFactory;
     protected $filable =[
-        'nombre_esp',
         'descripcion',
     ];
+
 }

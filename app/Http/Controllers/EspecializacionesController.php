@@ -14,20 +14,20 @@ class EspecializacionesController extends Controller
     public function store(Request $request)
     { 
         //registrar a la base de datos
-        $Espe=new Especializaciones();
-        $Espe->nombre=$request->nombre;
-        $Espe->descripcion=$request->descripcion;
-        $Espe->save();
-        return $Espe;
+        $Esp=new Especializaciones();
+        $Esp->nombre_esp=$request->nombre_esp;
+        $Esp->descripcion=$request->descripcion;
+        $Esp->save();
+        return $Esp;
     }
     // actualizar
     public function update(Request $request, $id)
     {
-        $Espe=Especializaciones::find($id);
-        $Espe->nombre=$request->nombre;
-        $Espe->descripcion=$request->descripcion;
-        $Espe->save();
-        return $Espe;
+        $Esp=Especializaciones::find($id);
+        $Esp->nombre_esp=$request->nombre_esp;
+        $Esp->descripcion=$request->descripcion;
+        $Esp->save();
+        return $Esp;
     }
     public function destroy($id)
     {

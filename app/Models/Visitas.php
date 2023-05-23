@@ -5,11 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Especializaciones extends Model
+class Visitas extends Model
 {
     use HasFactory;
     protected $filable =[
-        'nombre_esp',
+        'fecha_visita',
+        'hora_visita',
         'descripcion',
+        'id_mascotas',
+        'id_veterinarios',
     ];
 }
